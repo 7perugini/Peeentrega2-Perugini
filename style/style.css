@@ -1,0 +1,190 @@
+/*General*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/*Contenido*/
+h2{
+  line-height: 5;
+  margin: 5%;
+  font-family: 'Noto Sans', sans-serif;
+}
+h3{
+  line-height: 3;
+  margin: 5%;
+  font-family: 'Noto Sans', sans-serif;
+}
+.texto{
+  line-height: 2;
+  margin: 3%;
+}
+
+/*main Page/ index*/
+body {
+  display: grid;
+  grid-template-columns: 0.50fr 1.25fr 1fr 1.25fr 1fr;
+  grid-template-rows: 200px 8000px 200px;
+  gap: 3px 5px;
+  grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    "footer footer footer footer footer";
+  background-color: rgba(0, 0, 0, 10);
+  background-image:url("/media/testgreencalm.jpg");        
+  background-size: cover;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+header {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: 1fr ;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Name nav nav";
+  grid-area: header;
+  background-color: #a4b4a6;
+  color: #003608;
+}
+
+  
+.Name { grid-area: Name; 
+  color: 003608;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  display: inline-flex;
+  padding: 1px;}
+
+nav { grid-area: nav; 
+  border: 1px;
+  border-color: rgb(20, 53, 12);
+  display: inline-flex;
+}
+
+  .menu {
+    
+    background-color: #a4b4a6;
+    align-content: center;
+  
+  }
+      .menu li{
+        
+        text-align: center;
+        padding: 20px;
+        display: inline-block;
+       
+      }
+  
+      .menu li a{ 
+        color: #003608;
+        margin: 10px;
+        padding: 20px;
+        text-decoration: none;
+        text-align: center;
+  
+      }
+  
+      .menu li a:hover{
+        color: #cef9d4;
+        border-radius: 15px;
+        background-color: #828b92;
+      }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.2fr 1.4fr;
+  gap: 0px 0px;
+  grid-area: main;
+}
+
+aside { grid-area: 1 / 1 / 4 / 2; 
+  background-color: #003608;}
+
+.pageTitle { grid-area: 1 / 3 / 2 / 5; }
+
+
+.QuiénesSomos  { grid-area: 2 / 2 / 3 / 6; 
+display: inline-block;}
+
+  .Image1 { 
+    padding: 15px;
+    width: 45%;
+    height: 500px;
+    overflow: hidden;
+    margin: 2%;
+    display: inline-block;
+    left: auto; }
+
+  .QuiénesSomosdesc { 
+  padding: 8px;
+  width: 500px;
+  height: 500px;
+  overflow: auto;
+  margin: 2%;
+  /*display: inline-block;*/
+  background-color: rgba(249, 249, 249, 0.5); }
+
+.Objetivos { grid-area: 3 / 2 / 4 / 6; }
+
+  .Image2 { grid-area: 3 / 2 / 4 / 4;
+  width: 800px;
+  height: 800px;
+  overflow:hidden  ; }
+
+  .Objetivosdesc { grid-area: 3 / 4 / 4 / 6; 
+  padding: 8px;
+  width: 500px;
+  height: 500px;
+  overflow: auto;
+  margin: 2%;
+  /*display: inline-block;*/
+  background-color: rgba(249, 249, 249, 0.5);}
+
+
+
+footer { grid-area: footer;
+  background-color: #002400; }
+
+
+  
+
+
+/*jornadasV*/
+/*body{ 
+  display: grid; 
+  grid-template-columns: 2fr 0.5fr 0.5fr 1fr 1fr; 
+  grid-template-rows: 0.05fr 0.8fr 2fr 2fr 0.4fr; 
+  gap: 8px 13px; 
+  background-color: rgba(0, 0, 0, 10);
+      background-image:url("/media/testgreencalm.jpg");        
+      background-size: cover;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 2000px;
+  width: 100%;
+}*/
+
+.accionesEventos{
+  display: inline-block;
+  margin: 5px;
+  
+}
+.imagesjornadas{
+  width: 1000px;
+  height: 1000px;
+}
+
+
+  .Carrousel { grid-area: 3 / 1 / 5 / 4; }
+  
+  .Calendar { grid-area: 3 / 4 / 4 / 6; }
+  
+  .Information { grid-area: 4 / 4 / 5 / 6; }
+ 
+
+
+  
